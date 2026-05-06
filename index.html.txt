@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>City Life RP – Regelwerk</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#05070d;
+color:white;
+}
+
+.header{
+text-align:center;
+padding:40px;
+border-bottom:1px solid #222;
+}
+
+h1{
+color:#f5a623;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:20px;
+flex-wrap:wrap;
+}
+
+button{
+padding:12px 20px;
+border:1px solid #f5a623;
+background:transparent;
+color:#f5a623;
+cursor:pointer;
+}
+
+button:hover{
+background:#f5a623;
+color:black;
+}
+
+.box{
+max-width:900px;
+margin:20px auto;
+padding:20px;
+background:#0b0f1a;
+border:1px solid #222;
+white-space:pre-line;
+display:none;
+}
+
+.active{
+display:block;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>City Life RP Regelwerk</h1>
+<p>Wähle ein Regelwerk aus</p>
+</div>
+
+<div class="buttons">
+<button onclick="show('polizei')">📘 Organisations Regelwerk</button>
+<button onclick="show('gang')">📜 Gang Regelwerk</button>
+<button onclick="show('rp')">🎮 Generelles Regelwerk</button>
+<button onclick="show('Team')">🤝 Team regelwerk</button>
+</div>
+
+<!-- POLIZEI -->
+<div id="polizei" class="box">
+  
+📘 Organisations-Handbuch (Hardcore RP)
+§1 Grundauftrag der Polizei
+
+(1) Die Polizei dient dem Schutz von Leben, Eigentum und öffentlicher Ordnung.
+(2) Jede Handlung muss rechtsstaatlich, nachvollziehbar und realistisch erfolgen.
+(3) Machtmissbrauch ist streng verboten.
+(4) Roleplay steht über persönlichem Verhalten.
+
+§2 Dienstpflicht & Verhalten
+
+(1) Jeder Beamte verhält sich professionell und respektvoll.
+(2) Korruption ist nur mit Admin-Freigabe im RP erlaubt.
+(3) OOC-Verhalten im Dienst ist verboten.
+(4) Befehle der höheren Dienstgrade sind im RP zu befolgen.
+
+§3 Dispatch-System (Leitstelle)
+
+(1) Der Dispatch ist zentrale Koordination aller Einsätze.
+(2) Jede Situation muss über Dispatch gemeldet werden:
+a) Code 1 – Routine
+b) Code 2 – Dringend (ohne Sirene)
+c) Code 3 – Notfall (mit Sirene)
+d) Code 99 – Lebensgefahr / höchste Priorität
+
+(3) Dispatch gibt Einsatzbefehle und Koordination vor.
+(4) Eigenmächtiges Handeln ohne Meldung ist verboten.
+
+§4 Funkdisziplin
+
+(1) Funkverkehr muss kurz, klar und professionell sein.
+(2) Spam oder unnötige Gespräche sind verboten.
+(3) Jede Meldung muss folgende Struktur haben:
+
+Einheit
+Standort
+Situation
+Status
+
+(4) Beispiel:
+„Unit 12, Vespucci Boulevard, laufender Raubüberfall, benötige Verstärkung.“
+
+§5 Verkehrskontrollen
+
+(1) Kontrollen müssen RP-basiert durchgeführt werden.
+(2) Ablauf:
+a) Anhaltung mit Licht & Sirene
+b) Vorstellung als Polizei
+c) Grund der Kontrolle nennen
+d) Ausweiskontrolle durchführen
+
+(3) Durchsuchungen nur bei:
+a) Verdacht
+b) Straftat
+c) Zustimmung oder richterlicher Anordnung im RP
+
+(4) Eskalation nur bei realistischem Verhalten.
+
+§6 Fahrzeugkontrollen
+
+(1) Fahrzeuge dürfen nur mit RP-Grund durchsucht werden.
+(2) Flucht ist erlaubt, aber realistisch auszuspielen.
+(3) PIT-Manöver nur bei ausreichendem Training erlaubt.
+(4) Fahrzeuge sind keine Waffen.
+
+§7 Festnahmen
+
+(1) Festnahmen müssen korrekt und nachvollziehbar erfolgen.
+(2) Vorgehen:
+a) Handschellen anlegen
+b) Rechte vorlesen (Miranda Rights RP)
+c) Transport zur Station
+
+(3) Gewalt nur bei Widerstand erlaubt.
+(4) Gefangene müssen RP-konform behandelt werden.
+
+§8 Waffengebrauch
+
+(1) Schusswaffen sind das letzte Mittel.
+(2) Einsatzregeln:
+a) Warnung (wenn möglich)
+b) Taser / nicht-tödliche Mittel
+c) Schusswaffe bei Lebensgefahr
+
+(3) Overuse of Force ist verboten.
+(4) Jeder Schuss muss dokumentierbar sein.
+
+§9 Taser & nicht-tödliche Mittel
+
+(1) Taser dürfen bei Flucht oder Widerstand eingesetzt werden.
+(2) Schlagstöcke nur bei direkter Bedrohung.
+(3) Eskalation muss verhältnismäßig bleiben.
+
+§10 Einsatzstufen (Eskalation)
+
+(1) Level 1 – Beobachtung
+(2) Level 2 – Kontrolle / Annäherung
+(3) Level 3 – Verstärkung anfordern
+(4) Level 4 – bewaffnete Konfrontation
+(5) Level 5 – maximale Gefahr (Schusswaffeneinsatz)
+
+§11 Gang- und Großlagen
+
+(1) Bei Gangaktivitäten gilt erhöhte Alarmstufe.
+(2) Dispatch koordiniert alle Einheiten.
+(3) Keine Alleingänge bei Großlagen.
+(4) Zivilisten sind zu schützen.
+
+§12 Durchsuchungen
+
+(1) Personen dürfen nur mit RP-Grund durchsucht werden.
+(2) Ablauf:
+a) Ankündigung
+b) Erklärung des Grundes
+c) Durchführung der Durchsuchung
+
+(3) Demütigende oder unrealistische Handlungen sind verboten.
+
+§13 Einsatzfahrzeuge
+
+(1) Fahrzeuge dürfen nur zweckmäßig genutzt werden.
+(2) Sirene nur bei Einsatzlage.
+(3) Offroad-Nutzung nur mit geeigneten Fahrzeugen.
+(4) Crash-RP ist Pflicht.
+
+§14 Medizinische Zusammenarbeit
+
+(1) EMS muss respektiert werden.
+(2) Verletzte sind realistisch zu übergeben.
+(3) Polizei darf medizinische RP nicht stören.
+
+§15 Gefängnis & Strafvollzug
+
+(1) Gefangene müssen RP-konform behandelt werden.
+(2) Verhöre sind erlaubt, aber nicht übertrieben.
+(3) Misshandlung ist verboten.
+(4) Fluchtversuche müssen ausgespielt werden.
+
+§16 Bodycam & Dokumentation
+
+(1) Einsätze sollten dokumentiert werden (RP-Bodycam).
+(2) Berichte müssen nach Einsätzen erstellt werden.
+(3) Fehlverhalten wird über Logs geprüft.
+
+§17 Korruption
+
+(1) Korruption ist nur erlaubt mit Admin-Freigabe.
+(2) Jede korrupte Handlung muss RP-konsequent sein.
+(3) Entdeckung führt zu schweren Konsequenzen.
+
+§18 Kommunikation mit Zivilisten
+
+(1) Polizei muss professionell auftreten.
+(2) Provokationen dürfen nicht persönlich genommen werden.
+(3) Deeskalation hat Priorität.
+
+§19 Einsatzleitung
+
+(1) Ein Einsatzleiter wird pro Situation bestimmt.
+(2) Einsatzleiter gibt Befehle über Dispatch.
+(3) Eigenmächtiges Handeln kann bestraft werden.
+
+§20 Hardcore Polizeiregel (Kernregel)
+
+(1) Polizei ist realistisch, professionell und strukturiert.
+(2) Gewalt ist immer das letzte Mittel.
+(3) Jeder Einsatz muss logisch, dokumentiert und RP-konform sein.
+(4) Chaos-Polizei ist verboten.
+
+🔚 Ende des Polizei-Handbuchs
+
+</div>
+
+<!-- GANG -->
+<div id="gang" class="box">
+
+📜 Gang-Regelwerk (Hardcore RP)
+§1 Grundprinzip aller Gangs
+
+(1) Jede Gang ist eine organisierte kriminelle Struktur mit Hierarchie.
+(2) Jede Handlung muss realistisch und nachvollziehbar sein.
+(3) Gangs dienen nicht dem Chaos, sondern strukturiertem Kriminal-RP.
+(4) OOC-Konflikte haben keinen Einfluss auf IC-Handlungen.
+
+§2 Gang-Aufbau & Hierarchie
+
+(1) Jede Gang muss eine klare Rangordnung besitzen:
+a) Leader (Boss)
+b) High Command (Vize/Officers)
+c) Members
+d) Recruits / Probation
+
+(2) Befehle von höheren Rängen sind im RP bindend.
+(3) Machtkämpfe innerhalb der Gang müssen ausgespielt werden.
+
+§3 Territorien & Kontrolle
+
+(1) Jede Gang darf definierte Gebiete beanspruchen.
+(2) Gebietsansprüche müssen durch RP erarbeitet werden.
+(3) „Instant-Territory“ ohne RP ist verboten.
+(4) Straßenkontrolle bedeutet nicht absolute Herrschaft über Spieler.
+
+§4 Gangwars (Kriegssystem)
+
+(1) Gangwars dürfen nur mit Admin-Freigabe oder Event-System stattfinden.
+(2) Gründe für Gangwars:
+a) Drogenhandel
+b) Respektverlust im RP
+c) Gebietsstreit
+(3) Willkürliche Kriege sind verboten.
+(4) Zivilisten dürfen nicht grundlos einbezogen werden.
+
+§5 Ballas vs Bloods (Street-Gang-System)
+
+(1) Beide Gangs sind Rivalen mit historischer Feindschaft im RP.
+(2) Konflikte müssen eskalierend aufgebaut werden (kein Instant-Kill).
+(3) Schüsse ohne RP-Grund sind verboten.
+(4) Straßenpräsenz dient Show of Force, nicht sofortiger Gewalt.
+
+§6 Mafia & organisierte Kriminalität
+
+(1) Mafia-Strukturen sind diskret und professionell.
+(2) Fokus liegt auf:
+a) Geldwäsche
+b) Schutzgeld
+c) Waffenhandel
+(3) Öffentliche Gewalt ist für Mafia-Gangs selten und gezielt.
+(4) Anonymität ist Pflicht (Masken, Decknamen, Firmen).
+
+§7 Drogenhandel
+
+(1) Drogen müssen über RP-Prozesse hergestellt und verkauft werden.
+(2) Verkauf in Safezones ist verboten.
+(3) Polizei darf nicht unrealistisch provoziert werden.
+(4) Große Deals erfordern Vorbereitung und RP-Aufbau.
+
+§8 Waffen & Ausrüstung
+
+(1) Waffen müssen erspielt werden (keine „Spawn-Arsenale“).
+(2) Große Waffen sind selten und wertvoll.
+(3) Sichtbares Tragen von Waffen zieht Konsequenzen nach sich.
+(4) Übermäßige Bewaffnung ist FailRP.
+
+§9 Kleidung & Erkennung
+
+(1) Gang-Mitglieder müssen sich im RP erkennbar darstellen (Farben, Kleidung).
+(2) Maskierung ist bei kriminellen Aktionen Pflicht.
+(3) Uniformiertes Auftreten außerhalb von Events ist verboten.
+
+§10 Respekt & Streetcode
+
+(1) Respekt ist zentrale RP-Währung.
+(2) Beleidigungen können RP-Konflikte auslösen, aber keine sofortigen Kills.
+(3) „Disrespect = sofortiger Tod“ ist verboten ohne RP-Aufbau.
+(4) Streetcode muss eingehalten und ausgespielt werden.
+
+§11 Geiselnahmen
+
+(1) Geiseln müssen realistisch behandelt werden.
+(2) Misshandlung nur mit RP-Grund.
+(3) Forderungen müssen logisch und durchsetzbar sein.
+(4) Maximalzahl an Geiseln kann durch Server geregelt werden.
+
+§12 Zivilisten & Unbeteiligte
+
+(1) Zivilisten sind nicht Teil von Gangkonflikten.
+(2) Random Gewalt gegen Unbeteiligte ist verboten.
+(3) Kollateralschäden müssen RP-technisch erklärt werden.
+
+§13 Kommunikation zwischen Gangs
+
+(1) Verhandlungen müssen im RP stattfinden.
+(2) OOC-Absprachen sind verboten.
+(3) Diplomatie ist erlaubt (Bündnisse, Waffenstillstände).
+(4) Verrat ist erlaubt, muss aber RP-konsequent sein.
+
+§14 Gang-Events
+
+(1) Events (Raids, Deals, Wars) müssen angekündigt oder genehmigt werden.
+(2) Events müssen RP-Aufbau haben.
+(3) „Random Event Start“ ist verboten.
+
+§15 Polizeiinteraktion
+
+(1) Gangs dürfen mit Polizei interagieren, aber realistisch.
+(2) Flucht ist erlaubt, aber nicht unrealistisch.
+(3) Korruption in der Polizei darf nur RP-basiert entdeckt werden.
+(4) Anti-RP gegen Polizei ist verboten.
+
+§16 NLR & Gang-Konsequenzen
+
+(1) Nach Tod gilt NLR auch für Gangmitglieder.
+(2) Keine sofortige Rache ohne RP-Aufbau.
+(3) Gangverlust durch Event kann Konsequenzen haben (Gebietsverlust etc.).
+
+§17 Gang-Auflösung
+
+(1) Gangs können durch:
+a) Leader-Entscheidung
+b) Admin-Entscheidung
+c) RP-Zerstörung
+aufgelöst werden.
+(2) Reformation erfordert Genehmigung.
+
+§18 Metagaming & Insiderwissen
+
+(1) Informationen über andere Gangs dürfen nicht extern erlangt werden.
+(2) Discord-Leaks im RP sind verboten.
+(3) Streamsniping ist streng verboten.
+
+§19 Ränge & Disziplin
+
+(1) Insubordination (Ungehorsam) muss RP Konsequenzen haben.
+(2) Interne Strafen müssen realistisch sein (Ausschluss, Demotion).
+(3) OOC-Streit darf niemals in IC-Gangstruktur übertragen werden.
+
+§20 Hardcore Regel (Kernregel)
+
+(1) Jede Gang ist eine lebendige kriminelle Organisation.
+(2) Realismus steht über Action.
+(3) Jeder Konflikt muss aufgebaut, eskaliert und ausgespielt werden.
+(4) „Fun-Gangplay“ ohne Struktur ist verboten.
+
+🔚 Ende des Gang-Regelwerks
+
+</div>
+
+<!-- RP -->
+<div id="rp" class="box">
+
+📜 Hardcore Roleplay Regelwerk (GTA)
+§1 Grundprinzip des Servers
+
+(1) Dieser Server basiert auf realistischem Hardcore Roleplay.
+(2) Das Leben des Charakters ist höchstes Gut und muss jederzeit geschützt werden.
+(3) Unrealistisches Verhalten wird streng bestraft.
+(4) Jeder Spieler ist verpflichtet, dauerhaft im Roleplay zu bleiben.
+
+§2 Charakter & Verhalten
+
+(1) Jeder Charakter besitzt eine vollständige Identität (Name, Herkunft, Hintergrund).
+(2) Ein Charakterwechsel (Character Change) ist nur mit Genehmigung erlaubt.
+(3) Emotionen, Angst und Schmerz müssen realistisch ausgespielt werden.
+(4) „Ich bin unsterblich“-Mentalität ist verboten.
+
+§3 FearRP (Angstpflicht)
+
+(1) Jeder Spieler muss realistische Angst vor Tod und Waffen zeigen.
+(2) Bei Bedrohung mit einer Waffe ist Kooperation Pflicht.
+(3) Heldentum ohne realistischen Grund ist verboten.
+(4) Flucht oder Gegenwehr muss logisch begründet sein.
+
+§4 Value of Life (Lebenswert)
+
+(1) Das eigene Leben hat höchsten Wert.
+(2) Situationen mit klarer Unterlegenheit dürfen nicht ignoriert werden.
+(3) Selbstmordaktionen ohne RP-Grund sind verboten.
+(4) Unnötige Risiken sind untersagt.
+
+§5 Metagaming
+
+(1) Nutzung von externen Informationen ist streng verboten.
+(2) Beispiele:
+a) Discord-Infos im Spiel verwenden
+b) Livestream-Informationen nutzen
+(3) Jede externe Informationsquelle ist OOC.
+
+§6 Powergaming
+
+(1) Spieler dürfen keine unrealistischen Handlungen erzwingen.
+(2) Aktionen müssen immer eine Gegenreaktion ermöglichen.
+(3) Übermenschliche Fähigkeiten sind verboten.
+
+§7 FailRP
+
+(1) Unrealistisches Verhalten ist untersagt.
+(2) Beispiele:
+a) Nach Schussverletzung sofort sprinten
+b) Auto fährt frontal gegen Wand ohne Schaden
+(3) Jede Handlung muss physikalisch plausibel sein.
+
+§8 RDM (Random Deathmatch)
+
+(1) Das grundlose Töten von Spielern ist verboten.
+(2) Jede Gewalt benötigt eine RP-Begründung.
+(3) Provokationen rechtfertigen keinen Kill.
+
+§9 VDM (Vehicle Deathmatch)
+
+(1) Fahrzeuge dürfen nicht als Waffe genutzt werden.
+(2) Absichtliches Überfahren ist streng verboten.
+(3) Unfälle müssen ausgespielt werden.
+
+§10 New Life Rule (NLR)
+
+(1) Nach dem Tod darf der Spieler sich nicht an die Situation erinnern.
+(2) Rückkehr zum Todesschauplatz ist für mindestens 30 Minuten verboten.
+(3) Rache nach Tod ist untersagt.
+
+§11 Combat Logging
+
+(1) Das Verlassen des Spiels während RP-Situationen ist verboten.
+(2) Disconnects müssen nachvollziehbar sein.
+(3) Bei Flucht aus RP gilt automatischer Verlust der Situation.
+
+§12 Waffenregeln
+
+(1) Waffen sind selten und wertvoll.
+(2) Offenes Tragen ist nur bei RP-Gründen erlaubt.
+(3) Waffen müssen erspielt oder illegal beschafft werden.
+(4) Dauerhaftes „Herumrennen mit Waffen“ ist FailRP.
+
+§13 Polizei & Staatsgewalt
+
+(1) Polizei hat realistische Autorität.
+(2) Befehle sind im RP zu befolgen.
+(3) Korruption nur mit Admin-Genehmigung erlaubt.
+(4) Geiselnahmen müssen realistisch verhandelt werden.
+
+§14 Kriminelles Roleplay
+
+(1) Kriminelle Handlungen benötigen Vorbereitung und RP-Tiefe.
+(2) Keine „Instant-Raids“.
+(3) Geiseln dürfen nicht misshandelt ohne RP-Grund.
+(4) Polizei darf nicht unrealistisch provoziert werden.
+
+§15 Safezones
+
+(1) In Safezones ist jede Gewalt verboten.
+(2) Beispiele:
+a) Krankenhäuser
+b) Polizeistationen
+c) Regierungsgebäude
+(3) Ausnahme nur durch Admin-Event.
+
+§16 Kommunikation (Voice & Chat)
+
+(1) Voice Chat ist Pflicht im RP.
+(2) OOC im Voice ist verboten.
+(3) Soundboards nur eingeschränkt erlaubt.
+(4) Störendes Verhalten wird bestraft.
+
+§17 Fahrzeuge & Realismus
+
+(1) Realistische Fahrweise ist Pflicht.
+(2) Offroad nur mit geeigneten Fahrzeugen.
+(3) Stunts ohne RP-Grund sind verboten.
+(4) Schäden müssen ausgespielt werden.
+
+§18 Medizinisches Roleplay
+
+(1) Verletzungen müssen realistisch ausgespielt werden.
+(2) Nach schweren Verletzungen ist Handlungsunfähigkeit möglich.
+(3) Medics haben RP-Vorrang im Einsatz.
+
+§19 Wirtschaftssystem
+
+(1) Echtgeldhandel ist streng verboten.
+(2) Bugusing führt zum permanenten Bann.
+(3) Inflation durch Exploits ist untersagt.
+
+§20 Support & Regeln
+
+(1) Entscheidungen des Teams sind endgültig.
+(2) Beschwerden nur mit Beweisen.
+(3) Respekt gegenüber Support ist Pflicht.
+
+§21 Strafen
+
+(1) Mögliche Strafen:
+a) Verwarnung
+b) Jail im RP-System
+c) Tempban
+d) Permanent Ban
+(2) Wiederholung erhöht Strafstufe.
+(3) Schwere Verstöße führen sofort zu Bann.
+
+§22 Realismuspflicht (Kernregel
+
+(1) Jeder Spieler muss jederzeit realistisch handeln.
+(2) Alles, was im echten Leben unmöglich wäre, ist im RP verboten.
+(3) Der Server lebt von Immersion – nicht von Chaos.
+
+🔚 Schlusswort
+
+Dieses Regelwerk ist bindend. Mit dem Betreten des Servers akzeptiert jeder Spieler alle genannten Paragraphen automatisch.
+</div>
+
+  <!-- Team -->
+<div id="Team" class="box">
+🤝 Admin-Regelwerk – GTR-5RP
+
+1. Grundprinzipien
+
+Admins vertreten den Server nach außen und innen.
+
+- Neutralität: Keine Bevorzugung von Spielern oder Fraktionen
+- Professionalität: Respektvoller Umgang in jeder Situation
+- Vorbildfunktion: Einhaltung aller Serverregeln
+- Transparenz: Entscheidungen müssen nachvollziehbar sein
+
+---
+
+2. Rechte & Pflichten
+
+Rechte
+
+Admins dürfen:
+
+- Spieler verwarnen, kicken oder bannen
+- RP-Situationen stoppen
+- Logs einsehen
+- Items/Fahrzeuge entfernen
+
+Pflichten
+
+Admins müssen:
+
+- Regelverstöße objektiv prüfen
+- Beweise sichern (Clips, Screenshots, Logs)
+- Entscheidungen dokumentieren
+- Tickets bearbeiten
+
+---
+
+3. Missbrauch von Admin-Rechten
+
+Verboten ist:
+
+- Nutzung von Rechten für persönliche Vorteile
+- Eingriffe ins RP ohne Grund
+- Weitergabe interner Informationen
+- Racheaktionen gegen Spieler
+
+Konsequenz: Ausschluss aus dem Team
+
+---
+
+4. Verhalten im Roleplay
+
+- Kein Metagaming
+- Eigene Fälle nicht selbst bearbeiten
+- Adminrechte nur im Notfall im RP nutzen
+
+---
+
+5. Ticketsystem
+
+- Faire und chronologische Bearbeitung
+- Jeder Fall benötigt:
+  - Beweise
+  - Begründung
+  - Entscheidung
+
+---
+
+6. Strafen
+
+- Verwarnung – leichte Verstöße
+- Kick – kurzfristige Eskalation
+- Temp-Ban – wiederholte Verstöße
+- Perma-Ban – schwere Verstöße
+
+---
+
+7. Teamarbeit
+
+- Respektvoller Umgang
+- Kritik intern klären
+- Höherrangige Admins entscheiden im Zweifel
+
+---
+
+8. Vertraulichkeit
+
+- Keine Weitergabe interner Informationen
+
+---
+
+9. Aktivität
+
+- Mindestaktivität erforderlich
+- Abwesenheit melden
+- Inaktive Admins können entfernt werden
+
+---
+
+10. Dokumentation
+
+Festhalten von:
+
+- Spielername
+- Datum/Uhrzeit
+- Grund
+- Beweise
+- Admin
+
+---
+
+11. Eskalation
+
+1. Admin entscheidet
+2. Höherer Admin prüft
+3. Leitung entscheidet final
+
+---
+<script>
+
+function show(id){
+
+document.querySelectorAll('.box').forEach(b => b.classList.remove('active'));
+
+document.getElementById(id).classList.add('active');
+
+}
+
+</script>
+
+</body>
+</html>
