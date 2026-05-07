@@ -11,8 +11,15 @@
 body{
 margin:0;
 font-family:Arial;
-background:#05070d;
+background:url("https://cdn.phototourl.com/free/2026-05-06-5fe20def-b4ab-47de-8b4d-2578907ecf39.jpg") no-repeat center center fixed;
+background-size:cover;
 color:white;
+}
+
+/* Overlay für bessere Lesbarkeit */
+.overlay{
+background:rgba(0,0,0,0.75);
+min-height:100vh;
 }
 
 .header{
@@ -60,10 +67,18 @@ display:none;
 display:block;
 }
 
+
 </style>
 </head>
 
 <body>
+
+<!-- STARTSCREEN -->
+<div id="startscreen">
+<p>City Life RP wird geladen...</p>
+</div>
+
+<div class="overlay">
 
 <div class="header">
 <h1>City Life RP Regelwerk</h1>
@@ -74,13 +89,13 @@ display:block;
 <button onclick="show('polizei')">📘 Organisations Regelwerk</button>
 <button onclick="show('gang')">📜 Gang Regelwerk</button>
 <button onclick="show('rp')">🎮 Generelles Regelwerk</button>
-<button onclick="show('Team')">🤝 Team regelwerk</button>
-<button onclick="show('Discord Regelwerk')">🤝​ Discord Regelwerk</button>
+<button onclick="show('team')">🤝 Team Regelwerk</button>
+<button onclick="show('discord')">💬 Discord Regelwerk</button>
 </div>
 
 <!-- POLIZEI -->
 <div id="polizei" class="box">
-  
+
 📘 Organisations-Handbuch (Hardcore RP)
 §1 Grundauftrag der Polizei
 
@@ -250,7 +265,7 @@ c) Durchführung der Durchsuchung
 (4) Chaos-Polizei ist verboten.
 
 🔚 Ende des Polizei-Handbuchs
-
+  
 </div>
 
 <!-- GANG -->
@@ -404,7 +419,7 @@ aufgelöst werden.
 (4) „Fun-Gangplay“ ohne Struktur ist verboten.
 
 🔚 Ende des Gang-Regelwerks
-
+  
 </div>
 
 <!-- RP -->
@@ -566,10 +581,11 @@ d) Permanent Ban
 🔚 Schlusswort
 
 Dieses Regelwerk ist bindend. Mit dem Betreten des Servers akzeptiert jeder Spieler alle genannten Paragraphen automatisch.
+  
 </div>
 
-  <!-- Team -->
-<div id="Team" class="box">
+<!-- TEAM -->
+<div id="team" class="box">
 🤝 Team-Regelwerk – GTR-5RP
 
 1. Grundprinzipien
@@ -685,10 +701,11 @@ Festhalten von:
 2. Höherer Admin prüft
 3. Leitung entscheidet final
 
----
 </div>
-    <!-- Discord Regelwerk -->
-<div id="Discord Regelwerk" class="box">
+
+<!-- DISCORD -->
+<div id="discord" class="box">
+
 📜 Regelwerk des Discord-Servers
 
 Willkommen auf unserem Server! Damit sich alle wohlfühlen und Spaß haben, gelten hier ein paar einfache, aber wichtige Regeln. Bitte lies sie sorgfältig durch und halte dich daran.
@@ -743,15 +760,27 @@ Wir wollen eine freundliche, respektvolle und aktive Community schaffen.
 Wenn du Fragen hast oder ein Problem melden möchtest, wende dich an das Server-Team.
 
 Mit dem Betreten des Servers erklärst du dich mit diesen Regeln einverstanden.
-  
+
+</div>
+
+</div>
+
 <script>
 
 function show(id){
-
 document.querySelectorAll('.box').forEach(b => b.classList.remove('active'));
-
 document.getElementById(id).classList.add('active');
-
 }
 
+setInterval(updateClock,1000);
+updateClock();
+
+/* Startscreen weg */
+setTimeout(()=>{
+document.getElementById("startscreen").style.display="none";
+},3000);
+
+</script>
+
+</body>
 </html>
